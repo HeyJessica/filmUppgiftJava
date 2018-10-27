@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7aa75f8-d111-47b9-a178-92924006ae4b" name="Default Changelist" comment="" />
+    <list default="true" id="c7aa75f8-d111-47b9-a178-92924006ae4b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VgInlamningsuppg2Java/com/example/vginlamningsuppg2java/Film.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VgInlamningsuppg2Java/com/example/vginlamningsuppg2java/Film.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VgInlamningsuppg2Java/com/example/vginlamningsuppg2java/Filmer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VgInlamningsuppg2Java/com/example/vginlamningsuppg2java/Filmer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VgInlamningsuppg2Java/com/example/vginlamningsuppg2java/Serie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VgInlamningsuppg2Java/com/example/vginlamningsuppg2java/Serie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VgInlamningsuppg2Java/com/example/vginlamningsuppg2java/VgInlamningsuppg2Java.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VgInlamningsuppg2Java/com/example/vginlamningsuppg2java/VgInlamningsuppg2Java.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/Film.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/Filmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/Filmer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/Serie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/Serie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/VgInlamningsuppg2Java.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/VgInlamningsuppg2Java.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,32 +57,54 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="txt" value="33" />
+          <entry key="java" value="430" />
+          <entry key="txt" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="33" />
+          <entry key="JAVA" value="430" />
+          <entry key="PLAIN_TEXT" value="40" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.checkout.local" value="6" />
+          <entry key="git.branch.checkout.remote" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="30" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="30" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/VgInlamningsuppg2Java.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+            <state relative-caret-position="-879">
+              <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/Filmer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1479">
-              <caret line="89" selection-start-line="89" selection-end-line="89" />
+            <state relative-caret-position="391">
+              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+              <folding>
+                <element signature="e#1243#1244#0" expanded="true" />
+                <element signature="e#1292#1293#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/Film.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+            <state relative-caret-position="181">
+              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -98,8 +130,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/Serie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="79" selection-start-line="19" selection-start-column="79" selection-end-line="19" selection-end-column="79" />
+            <state relative-caret-position="187">
+              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -121,6 +153,11 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -128,10 +165,10 @@
         <option value="$PROJECT_DIR$/src/Serier.java" />
         <option value="$PROJECT_DIR$/src/Filmer.java" />
         <option value="$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/Serier.java" />
-        <option value="$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/Serie.java" />
-        <option value="$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/Filmer.java" />
-        <option value="$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/VgInlamningsuppg2Java.java" />
         <option value="$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/Film.java" />
+        <option value="$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/Serie.java" />
+        <option value="$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/VgInlamningsuppg2Java.java" />
+        <option value="$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/Filmer.java" />
       </list>
     </option>
   </component>
@@ -211,6 +248,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.VgInlamningsuppg2Java" />
+        <item itemvalue="Application.VgInlamningsuppg2Java" />
+        <item itemvalue="Application.VgInlamningsuppg2Java" />
+        <item itemvalue="Application.VgInlamningsuppg2Java" />
+        <item itemvalue="Application.VgInlamningsuppg2Java" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +280,21 @@
       <option name="project" value="LOCAL" />
       <updated>1540646132044</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="first commit">
+      <created>1540646183028</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1540646183028</updated>
+    </task>
+    <task id="LOCAL-00004" summary="destroy">
+      <created>1540646622911</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1540646622911</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -264,7 +319,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17437722" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.15480427" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -272,7 +327,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32851985" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32740214" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -315,22 +370,23 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="destroy" />
+    <option name="LAST_COMMIT_MESSAGE" value="destroy" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Filmer.java" />
     <entry file="file://$PROJECT_DIR$/src/Serier.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/VgInlamningsuppg2Java.java">
+    <entry file="file://$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/Film.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        <state relative-caret-position="181">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/Filmer.java">
+    <entry file="file://$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/Serie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        <state relative-caret-position="187">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -341,17 +397,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/Film.java">
+    <entry file="file://$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/VgInlamningsuppg2Java.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        <state relative-caret-position="-879">
+          <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/Serie.java">
+    <entry file="file://$PROJECT_DIR$/src/com/example/vginlamningsuppg2java/Filmer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="79" selection-start-line="19" selection-start-column="79" selection-end-line="19" selection-end-column="79" />
+        <state relative-caret-position="391">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+          <folding>
+            <element signature="e#1243#1244#0" expanded="true" />
+            <element signature="e#1292#1293#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

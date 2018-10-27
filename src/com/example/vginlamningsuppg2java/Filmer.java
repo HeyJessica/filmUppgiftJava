@@ -24,7 +24,6 @@ public class Filmer {
     }
 
     public boolean updateFilm(Film oldFilm, Film uppdatedFilm) {
-        boolean favorite;
         int foundPosition = findFilm(oldFilm);
         if(foundPosition <0) {
             System.out.println(oldFilm.getName() +", gick inte att hitta.");
@@ -79,10 +78,14 @@ public class Filmer {
     public void printFilms() {
         System.out.println("Filmlista:");
         for(int i=0; i<this.myFilms.size(); i++) {
+            String favorit = "";
+            if(this.myFilms.get(i).getFavorite()){
+                favorit = "Filmen är en favorit";
+            }
             System.out.println((i+1) + "." +
                     this.myFilms.get(i).getName() + " -> " +
                     this.myFilms.get(i).getYear()+ " -> " +
-                    this.myFilms.get(i).getFavorite());
+                    favorit);
         }
 
     }

@@ -81,7 +81,7 @@ public class VgInlamningsuppg2Java {
         String name = scan.nextLine();
         System.out.println("Skriv in vilket år filmen kom: ");
         String year = scan.nextLine();
-        Film newFilm = new Film(name, year); //skapar ett objekt direkt där vi kommer åt metoden createFilm i Film klassen
+        Film newFilm = new Film(name, year, false); //skapar ett objekt direkt där vi kommer åt metoden createFilm i Film klassen
         if (filmer.addNewFilm(newFilm)) {
             System.out.println("Ny film tillagd: Namn: " + name + ", Årtal: " + year);
         } else {
@@ -90,7 +90,6 @@ public class VgInlamningsuppg2Java {
     }
 
     private static void addNewSerie() {
-        String favorite = null;
         System.out.println("Skriv in namnet på serien: ");
         String name = scan.nextLine();
         System.out.println("Skriv in vilket år serien kom: ");
@@ -99,7 +98,7 @@ public class VgInlamningsuppg2Java {
         String episodes = scan.nextLine();
         System.out.println("Skriv in hur många säsonger serien har: ");
         String seasons = scan.nextLine();
-        Serie newSerie= Serie.createSerie(name, year, favorite, episodes, seasons); //skapar ett objekt direkt där vi kommer åt metoden createSerie i Serie klassen
+        Serie newSerie= new Serie(name, year, false, episodes, seasons); //skapar ett nytt objekt och skickar in värden direkt till konstruktorn
         if (serier.addNewSerie(newSerie)) {
             System.out.println("Ny serie tillagd: Namn: " + name + ", Årtal: " + year + "Antal säsonger: " + seasons + "Antal episoder: "+ episodes);
         } else {
@@ -121,10 +120,14 @@ public class VgInlamningsuppg2Java {
         System.out.print("Skriv in nytt årtal för filmen: ");
         String newYear = scan.nextLine();
 
-       // System.out.print("Vill du lägga till filmen som favorit? ");
-       // String favorite = scan.nextLine();
+       System.out.print("Vill du lägga till filmen som favorit? j/n: ");
+       boolean favorite = false;
+       String answer = scan.nextLine();
+       if(answer.equals("j")){
+           favorite = true;
+        }
 
-        Film newFilm = new Film(newName, newYear);
+        Film newFilm = new Film(newName, newYear, favorite);
         if (filmer.updateFilm(existingFilm, newFilm)) {
             System.out.println("Filmen är uppdaterad!");
         } else {
