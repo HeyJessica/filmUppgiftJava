@@ -8,8 +8,8 @@ public class Serie extends Film{
     private String seasons;
 
     //konstruktor för subklassen
-    public Serie(String name, String year, String favorite, String episodes, String seasons){
-        super("", "", "");
+    public Serie(String name, String year, boolean isFavorite, String episodes, String seasons){
+        super(name, year, isFavorite);
         this.episodes = episodes;
         this.seasons = seasons;
     }
@@ -17,8 +17,8 @@ public class Serie extends Film{
     public String getEpisodes() { return episodes; }
     public String getSeasons() { return seasons; }
 
-    public static Serie createSerie(String name, String year, String favorite, String episodes, String seasons){
+    /*public static Serie createSerie(String name, String year, String favorite, String episodes, String seasons){
         return new Serie(name, year, favorite, episodes, seasons);
-    }
+    }*/
 
 }
