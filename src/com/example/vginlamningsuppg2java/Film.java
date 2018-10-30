@@ -15,9 +15,4 @@ public class Film {
     public String getName(){ return name; }
     public String getYear(){ return year; }
     public boolean getFavorite(){ return isFavorite; }
-
-   /* public static Film createFilm(String name, String year, boolean isFavorite){
-        return new Film(name, year, isFavorite);
-
-    }*/
 }

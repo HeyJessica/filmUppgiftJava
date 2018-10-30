@@ -20,17 +20,17 @@ public class Serier {
 
     }
 
-  /*  public boolean updateFilm(Film oldFilm, Film uppdatedFilm) {
-        int foundPosition = findFilm(oldFilm);
+    public boolean updateSerie(Serie oldSerie, Serie uppdatedSerie) {
+        int foundPosition = findSerie(oldSerie);
         if(foundPosition <0) {
-            System.out.println(oldFilm.getName() +", gick inte att hitta.");
+            System.out.println(oldSerie.getName() +", gick inte att hitta.");
             return false;
         }
 
-        this.myFilms.set(foundPosition, uppdatedFilm);
-        System.out.println(oldFilm.getName() + ", har uppdaterats med " + uppdatedFilm.getName());
+        this.mySeries.set(foundPosition, uppdatedSerie);
+        System.out.println(oldSerie.getName() + ", har uppdaterats med " + uppdatedSerie.getName());
         return true;
-    }*/
+    }
 
     public boolean removeSerie(Serie serie) {
         int foundPosition = findSerie(serie);
@@ -76,9 +76,15 @@ public class Serier {
     public void printSeries() {
         System.out.println("Serielista:");
         for(int i=0; i<this.mySeries.size(); i++) {
-            System.out.println((i+1) + "." +
-                    this.mySeries.get(i).getName() + " -> " +
-                    this.mySeries.get(i).getYear());
+            String favorit = "";
+            if(this.mySeries.get(i).getFavorite()){
+               favorit= "*Serien är en favorit!*";
+            }
+            System.out.println((i+1) + ". Namn -> " +
+                    this.mySeries.get(i).getName() + ". Årtal -> " +
+                    this.mySeries.get(i).getYear() + ". Säsonger -> " +
+                    this.mySeries.get(i).getEpisodes() + ". Episoder -> " +
+                    this.mySeries.get(i).getSeasons() +". "+ favorit);
 
         }
 
