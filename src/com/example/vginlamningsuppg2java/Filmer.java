@@ -66,7 +66,7 @@ public class Filmer {
         return null;
     }
 
-    public Film queryFilm(String name) { // (Vi returnerar Film (ett objekt))
+    public Film queryFilm(String name) { //returnerar Film (ett objekt)
         int position = findFilm(name);
         if(position >=0) {
             return this.myFilms.get(position);
@@ -80,11 +80,11 @@ public class Filmer {
         for(int i=0; i<this.myFilms.size(); i++) {
             String favorit = "";
             if(this.myFilms.get(i).getFavorite()){
-                favorit = "Filmen är en favorit";
+                favorit = "*Filmen är en favorit!*";
             }
-            System.out.println((i+1) + "." +
-                    this.myFilms.get(i).getName() + " -> " +
-                    this.myFilms.get(i).getYear()+ " -> " +
+            System.out.println((i+1) + ". Namn -> " +
+                    this.myFilms.get(i).getName() + ". Årtal -> " +
+                    this.myFilms.get(i).getYear() + ". "+
                     favorit);
         }
 

@@ -21,7 +21,7 @@ public class VgInlamningsuppg2Java {
         }
         // printActions();
         while (!quit) {
-                System.out.println("\nVälj: (6 för att visa val)");
+                System.out.println("\nVälj: (5 för att visa val)");
 
             int choise = scan.nextInt();
             scan.nextLine();
@@ -50,8 +50,13 @@ public class VgInlamningsuppg2Java {
                     }
 
                 case 3:
+                    if(option==1){
                     updateFilm();
-                    break;
+                    break;}
+                    else{
+                        updateSerie();
+                        break;
+                    }
 
                 case 4:
                     if(option==1){
@@ -62,11 +67,7 @@ public class VgInlamningsuppg2Java {
                         break;
                     }
 
-               /* case 5:
-                    queryFilm();
-                    break;*/
-
-                case 6:
+                case 5:
                     if(option==1){
                         printFilmActions();
                         break;}
@@ -81,7 +82,7 @@ public class VgInlamningsuppg2Java {
         String name = scan.nextLine();
         System.out.println("Skriv in vilket år filmen kom: ");
         String year = scan.nextLine();
-        Film newFilm = new Film(name, year, false); //skapar ett objekt direkt där vi kommer åt metoden createFilm i Film klassen
+        Film newFilm = new Film(name, year, false); //skapar ett objekt. Boolean favorite är false när objektet skapas
         if (filmer.addNewFilm(newFilm)) {
             System.out.println("Ny film tillagd: Namn: " + name + ", Årtal: " + year);
         } else {
@@ -100,7 +101,7 @@ public class VgInlamningsuppg2Java {
         String seasons = scan.nextLine();
         Serie newSerie= new Serie(name, year, false, episodes, seasons); //skapar ett nytt objekt och skickar in värden direkt till konstruktorn
         if (serier.addNewSerie(newSerie)) {
-            System.out.println("Ny serie tillagd: Namn: " + name + ", Årtal: " + year + "Antal säsonger: " + seasons + "Antal episoder: "+ episodes);
+            System.out.println("Ny serie tillagd: Namn: " + name + ", årtal: " + year + ", antal säsonger: " + seasons + ", antal episoder: "+ episodes);
         } else {
             System.out.println("Kan inte lägga till, " + name + " finns redan.");
         }
@@ -130,6 +131,39 @@ public class VgInlamningsuppg2Java {
         Film newFilm = new Film(newName, newYear, favorite);
         if (filmer.updateFilm(existingFilm, newFilm)) {
             System.out.println("Filmen är uppdaterad!");
+        } else {
+            System.out.println("Gick inte att updatera.");
+        }
+    }
+
+    private static void updateSerie() {
+        System.out.println("Skriv in namnet på serien som skall uppdateras: ");
+        String name = scan.nextLine();
+        Serie existingSerie = serier.querySerie(name);
+        if (existingSerie == null) {
+            System.out.println("Kan inte hitta filmen.");
+            return;
+        }
+
+        System.out.print("Skriv in nytt namn för serien: ");
+        String newName = scan.nextLine();
+        System.out.print("Skriv in nytt årtal för serien: ");
+        String newYear = scan.nextLine();
+        System.out.print("Skriv in antal säsonger: ");
+        String newSeasons = scan.nextLine();
+        System.out.print("Skriv in antal episoder: ");
+        String newEpisodes = scan.nextLine();
+
+        System.out.print("Vill du lägga till serien som favorit? j/n: ");
+        boolean favorite = false;
+        String answer = scan.nextLine();
+        if(answer.equals("j")){
+            favorite = true;
+        }
+
+        Serie newSerie = new Serie(newName, newYear, favorite, newSeasons, newEpisodes);
+        if (serier.updateSerie(existingSerie, newSerie)) {
+            System.out.println("Serien är uppdaterad!");
         } else {
             System.out.println("Gick inte att updatera.");
         }
@@ -168,21 +202,6 @@ public class VgInlamningsuppg2Java {
         }
     }
 
-
-
-       /* private static void queryFilm() {
-            System.out.println("Skriv in namnet på filmen: ");
-            String name = scan.nextLine();
-            Film existingFilm = filmer.queryFilm(name);
-            if (existingFilm == null) {
-                System.out.println("Kan inte hitta filmen.");
-                return;
-            }
-
-            System.out.println("Namn: " + existingFilm.getName() + " årtal:" + existingFilm.getYear());
-        }*/
-
-
     private static void printFilmActions() {
         System.out.println("\nVälj:");
         System.out.println("0  - Stäng av\n" +
@@ -190,8 +209,7 @@ public class VgInlamningsuppg2Java {
                 "2  - Lägga till en ny film\n" +
                 "3  - Uppdatera en inlagd film\n" +
                 "4  - Ta bort en inlagd film\n" +
-                //   "5  - Söka efter en inlagd film\n" +
-                "6  - Visa lista över alla val.");
+                "5  - Visa lista över alla val.");
     }
 
     private static void printSerieActions() {
@@ -199,9 +217,8 @@ public class VgInlamningsuppg2Java {
         System.out.println("0  - Stäng av\n" +
                 "1  - Visa serier\n" +
                 "2  - Lägga till en ny serie\n" +
-                //  "3  - Uppdatera en inlagd serie\n" +
+                "3  - Uppdatera en inlagd serie\n" +
                 "4  - Ta bort en inlagd serie\n" +
-                //   "5  - Söka efter en inlagd serie\n" +
-                "6  - Visa lista över alla val.");
+                "5  - Visa lista över alla val.");
     }
 }

@@ -16,9 +16,4 @@ public class Serie extends Film{
 
     public String getEpisodes() { return episodes; }
     public String getSeasons() { return seasons; }
-
-    /*public static Serie createSerie(String name, String year, String favorite, String episodes, String seasons){
-        return new Serie(name, year, favorite, episodes, seasons);
-    }*/
-
 }
